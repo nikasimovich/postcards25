@@ -97,12 +97,14 @@ hr {
 
 /* Links inherit main.css behavior: white links, underline on hover */
 a {
-  color: white; /* was #2B471E */
+  color: white;
+  background-color: #2836ff;
   text-decoration:none;
 }
 
 a:hover {
-  text-decoration:underline;
+  text-decoration:none;
+  opacity:.8;
 }
 
 /* Optional selected state matches lavender accent from main.css */
@@ -138,7 +140,7 @@ h5 {
 /* Footer adopts main.css footer blue; keep white text for contrast */
 footer {
   /* height:2px; */
-  background-color:#033896; /* was #2B471E */
+  background-color:#2836ff; /* was #2B471E */
   color:#ffffff;           /* was #A1CF99 */
   margin:0;
   padding:5px;
