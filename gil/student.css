@@ -1,0 +1,180 @@
+html {
+  margin:0;
+}
+
+body {
+  margin:0;
+  font-family: "Crimson Text", serif;
+}
+
+/* Type */
+h1 {
+  font-family: "Cutive Mono", monospace;
+  font-size:6vh;
+  line-height:1.1;
+  font-weight: normal;
+  text-align:center;
+  margin-bottom:5px;
+}
+
+h2 {
+  font-family: 'Karla', sans-serif;
+  font-size:18px;
+  font-weight:normal;
+  margin-top:0;
+  text-align:center;
+  margin-bottom:25px;
+}
+
+h3 {
+  margin-top:0;
+  font-weight:normal;
+  font-family: 'Crimson Text', serif;
+  text-align:center;
+  font-size:22px;
+  margin-top:0;
+  margin-bottom:50px;
+}
+
+/* Header adopts main.css primary blue and white text */
+header {
+  display:flex;
+  flex-direction:column;
+  justify-items:center;
+  align-items:center;
+  background-color: #2836ff; /* was #2B471E */
+  color:white;
+  margin: 0 0 100px 0;
+  padding: 50px 0;
+  width: 100vw;
+}
+
+header h2 {
+  max-width:70%;
+}
+
+/* Rules */
+hr {
+  border:2px solid black;
+  width:100%;
+  margin-bottom:100px;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  padding:0 50px;
+}
+
+.module {
+  margin-bottom:100px;
+}
+
+/* Text selection color from main.css */
+::selection {
+  color: white;
+  background: #110059; /* was #7BD80A */
+}
+
+/* Body copy */
+.bodycopy {
+  max-width:80%;
+  font-size:22px;
+  line-height:1.3;
+}
+
+/* Utilities */
+.caps {
+  text-transform: uppercase;
+  letter-spacing:.1px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Links inherit main.css behavior: white links, underline on hover */
+a {
+  color: white; /* was #2B471E */
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+/* Optional selected state matches lavender accent from main.css */
+a.selected{
+  background-color:#d6c1ff !important; /* was #A1CF99 */
+}
+
+/* Buttons match main.css: lavender bg + blue text */
+.buttons a {
+  background-color: #d6c1ff; /* was white */
+  padding: .5rem .75rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color:#2836ff; /* was #2B471E */
+}
+
+/* Quotes */
+h5 {
+  font-family: 'Karla', sans-serif;
+  font-size:3vh;
+  letter-spacing:1px;
+  margin-bottom:25px;
+}
+
+.pullquote {
+  font-size:4vh;
+  font-weight:normal;
+  text-align: center;
+  max-width:500px;
+}
+
+/* Footer adopts main.css footer blue; keep white text for contrast */
+footer {
+  /* height:2px; */
+  background-color:#033896; /* was #2B471E */
+  color:#ffffff;           /* was #A1CF99 */
+  margin:0;
+  padding:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Footer links stay readable on dark blue */
+footer a{
+  color:#ffffff; /* main.css has global white links; align here */
+}
+
+/* Media blocks */
+.module.bigimg {
+  width: 100%;
+}
+
+.module.medimg {
+  width: 70%;
+}
+
+.module.smallimg {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .wrapper  {
+    padding: 0;
+  }
+}
